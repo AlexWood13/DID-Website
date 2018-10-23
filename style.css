@@ -49,8 +49,7 @@ table {
 
   body {
     font-family: "Lato", sans-serif;
-    background-color: #444;
-    background-color:#222;
+    background-color:#18B5E2;
   }
 
   .header-nav {
@@ -63,14 +62,18 @@ table {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
+
   }
 
   .header-nav a {
-    padding: 6px 8px 6px 16px;
+    padding: 16px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
+		border-bottom: 1px dashed grey;
+		border-top: 1px dashed grey;
+		line-height:50px;
   }
 
   .header-nav a:hover {
@@ -80,11 +83,12 @@ table {
   .wrapper {
     width:80%;
     margin:0 auto;
-    background-color:#fff;
+    background-color:#004D9F;
     border-radius:5px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding:20px;
+    margin-bottom: 20px;
+    padding:2rem 2rem;
+		box-shadow:  10px 10px 5px blue;
   }
 
   .main {
@@ -92,20 +96,16 @@ table {
     margin-left: 160px;
 		margin-top: 10px;
     padding: 0;
-    background-color:#222;
-  }
+    background-color:#18B5E2;
 
-  .text {
-    font-size:1rem;
-    line-height:40px;
-    padding:10px;
-		border-top: dashed 1px black;
   }
 
   .main h1 {
 		margin-bottom: 10px;
     font-size:3rem;
-    padding:0 10px;
+    padding:1rem;
+		text-shadow: 5px 5px 5px blue;
+
   }
 
   /* Gridding system */
@@ -127,6 +127,7 @@ table {
     background-color:#fff;
     border-radius:5px;
 		margin-bottom: 10px;
+
   }
 
   .grid-3 h3 {
@@ -175,7 +176,7 @@ table {
 
 	.services div {
 		border-bottom:#333 dashed 1px;
-		padding:1.2rem 1rem;
+		padding:1.8rem 2rem;
 	}
 
 	.services h3 {
@@ -210,7 +211,8 @@ table {
     font-size: 1rem;
     color: #fff;
     display:flex;
-
+		border-bottom: none;
+		border-top: none;
   }
 
   .main {
@@ -225,37 +227,37 @@ table {
     text-indent: 0;
   }
 
-	/* blurred  image */
-.showcase::after {
-  height:60vh;
-}
+		/* blurred  image */
+	.showcase::after {
+	  height:60vh;
+	}
 
-.content {
-  position: absolute;
-  z-index: 1;
-  top: 55%;
-  left: 50%;
-  margin-top: 150px;
-  margin-left: -145px;
-  width: 300px;
-  height: 350px;
-  text-align: center;
-  transition: all 1000ms;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-    transition:all 2000ms;
-}
+	.content {
+	  position: absolute;
+	  z-index: 1;
+	  top: 55%;
+	  left: 50%;
+	  margin-top: 150px;
+	  margin-left: -145px;
+	  width: 300px;
+	  height: 350px;
+	  text-align: center;
+	  transition: all 1000ms;
+	  filter: blur(3px);
+	  -webkit-filter: blur(3px);
+	 	transition:all 2000ms;
+	}
 
-.content .logo {
-  height:60px;
-  width:60px;
-  margin-left:-20px;
-}
+	.content .logo {
+	  height:60px;
+	  width:60px;
+	  margin-left:-20px;
+	}
 
-.content .title {
-  font-size: 1rem;
-  margin-top: 1rem;
-  line-height: 1.7;
-}
+	.content .title {
+	  font-size: 1rem;
+	  margin-top: 1rem;
+	  line-height: 1.7;
+	}
 
 }
