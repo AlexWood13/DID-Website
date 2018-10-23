@@ -188,12 +188,8 @@ table {
 	.grid-container {
 
 		padding:4rem 6rem;
-
 	}
-
-
 }
-
 
 @media screen and (max-width: 450px) {
   .header-nav {
