@@ -47,128 +47,170 @@ table {
   text-decoration: none;
 }
 
-  body {
-    font-family: "Lato", sans-serif;
-    background-color:#18B5E2;
-  }
+body {
+  font-family: "Lato", sans-serif;
+  background-color:#18B5E2;
+}
 
-  .header-nav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
+.header-nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 
-  }
+}
 
-  .header-nav a {
-    padding: 16px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-		border-bottom: 1px dashed grey;
-		border-top: 1px dashed grey;
-		line-height:50px;
-  }
+.header-nav a {
+  padding: 16px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+	border-bottom: 1px dashed grey;
+	border-top: 1px dashed grey;
+	line-height:50px;
+}
 
-  .header-nav a:hover {
-    color: #fff;
-  }
+.header-nav a:hover {
+  color: #fff;
+}
 
-  .wrapper {
-    width: 80%;
-    margin:0 auto;
-    background-color:#f5f5f5;
-    border-radius:5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 2rem 2rem;
-		box-shadow:7px 7px 7px #333;
-  }
+.wrapper {
+  width: 80%;
+  margin:0 auto;
+  background-color:#f5f5f5;
+  border-radius:5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 2rem 2rem;
+	box-shadow:7px 7px 7px #333;
+}
 
-  .main {
-		text-align:center;
-    margin-left: 160px;
-		margin-top: 10px;
-    padding: 0;
-    background-color:#18B5E2;
-  }
+.main {
+	text-align:center;
+  margin-left: 160px;
+	margin-top: 10px;
+  padding: 0;
+  background-color:#18B5E2;
+}
 
-  .main .wrapper h1 {
-		margin-bottom: 10px;
-    font-size:3rem;
-    padding:1rem;
-  }
+.main .wrapper h1 {
+	margin-bottom: 10px;
+  font-size:3rem;
+  padding:1rem;
+}
 
-  /* Gridding system */
-  .grid-3 {
-    padding:10px 10px;
-    font-size:1rem;
-    display:grid;
-    grid-gap:20px;
-    line-height: 1.7;
-    grid-template-columns:repeat(3, 1fr);
-  }
+/* Gridding system */
+.grid-3 {
+  padding:10px 10px;
+  font-size:1rem;
+  display:grid;
+  grid-gap:20px;
+  line-height: 1.7;
+  grid-template-columns:repeat(3, 1fr);
+}
 
-  /*content container */
-  .grid-container {
-    max-width:80%;
-    margin:auto;
-    overflow:hidden;
-    padding:4rem 2rem;
-    background-color:#fff;
-    border-radius:5px;
-		margin-bottom: 10px;
+/*content container */
+.grid-container {
+  max-width:80%;
+  margin:auto;
+  overflow:hidden;
+  padding:4rem 2rem;
+  background-color:#fff;
+  border-radius:5px;
+	margin-bottom: 10px;
+}
 
-  }
+.grid-3 h3 {
+  font-size:2rem;
+  font-weight:800;
+}
 
-  .grid-3 h3 {
-    font-size:2rem;
-    font-weight:800;
-  }
+.grid-3 p {
+  font-size:1.3rem;
+  text-indent: 5px;
+}
 
-  .grid-3 p {
-    font-size:1rem;
-    text-indent: 5px;
-  }
+.showcase::after {
+  content:'';
+  height:100vh;
+  width:100%;
+  background-image:url(assets/lichKing.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  display:block;
+  filter:blur(0px);
+  -webkit-filter:blur(0px);
+  transition:all 3000ms;
+}
 
-	.showcase::after {
-	  content:'';
-	  height:100vh;
-	  width:100%;
-	  background-image:url(assets/lichKing.jpg);
-	  background-size:cover;
-	  background-repeat:no-repeat;
-	  background-position:center;
-	  border-radius: 5px;
-	  display:block;
-	  filter:blur(0px);
-	  -webkit-filter:blur(0px);
-	  transition:all 3000ms;
-	}
+.showcase:hover::after {
+  filter:blur(10px);
+  -webkit-filter:blur(10px);
+  transition:all 5000ms;
+}
 
-	.showcase:hover::after {
-	  filter:blur(10px);
-	  -webkit-filter:blur(10px);
-	  transition:all 5000ms;
-	}
+.showcase:hover .content {
+  filter:blur(0px);
+  -webkit-filter:blur(0px);
+  transition:all 2000ms;
+}
 
-	.showcase:hover .content {
-	  filter:blur(0px);
-	  -webkit-filter:blur(0px);
-	  transition:all 2000ms;
-	}
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 55%;
+  left: 50%;
+  margin-top: 150px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  transition:all 3000ms;
+}
 
-/* Mobile Content */
-@media screen and (max-width: 950px) {
+.content .logo {
+  height:150px;
+  width:150px;
+	margin-left:100px;
+}
+
+.content .title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1.7;
+	margin-left:100px;
+	color:white;
+}
+
+#footer{
+	background-color: #222;
+	position: relative;
+	height: 60px;
+}
+
+#footer p  {
+	color: #FFF;
+	line-height: 60px;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 1050px) {
   .grid-3 {
     grid-template-columns:1fr;
   }
+	.grid-3 {
+		grid-template-columns:1fr;
+	}
 
 	.services div {
 		border-bottom:#333 dashed 1px;
@@ -181,14 +223,37 @@ table {
 		font-size:1.3em;
 	}
 
+/* Landscape phone */
+@media screen and (max-height: 950px) {
+
 	/*content container */
 	.grid-container {
 		padding:4rem 6rem;
 	}
 
+		/* blurred  image */
+	.showcase::after {
+		height:80vh;
+	}
+
+	.content .logo {
+		height:80px;
+		width:80px;
+		margin-left:150px;
+		margin-top: -5px;
+	}
+
+	.content .title {
+		font-size: 1rem;
+		margin-top: 1rem;
+		line-height: 1.7;
+		margin-left: 150px;
+		margin-top: -5px;
+	}
+
 }
 
-/* Landscape */
+/* vertical phone */
 @media screen and (max-width: 450px) {
   .header-nav {
     height: 50px;
@@ -216,7 +281,7 @@ table {
     margin-top:50px;
     margin-left: 0;
     font-size:;
-    padding: 10px 0;
+    padding: 10px 10px 0 10px;
   }
 
   .main p {
@@ -224,37 +289,17 @@ table {
     text-indent: 0;
   }
 
-		/* blurred  image */
-	.showcase::after {
-	  height:60vh;
-	}
-
-	.content {
-	  position: absolute;
-	  z-index: 1;
-	  top: 55%;
-	  left: 50%;
-	  margin-top: 150px;
-	  margin-left: -145px;
-	  width: 300px;
-	  height: 350px;
-	  text-align: center;
-	  transition: all 1000ms;
-	  filter: blur(3px);
-	  -webkit-filter: blur(3px);
-	 	transition:all 2000ms;
-	}
-
 	.content .logo {
-	  height:60px;
-	  width:60px;
-	  margin-left:-20px;
+		height:80px;
+		width:80px;
+		margin-left:0px;
 	}
 
 	.content .title {
-	  font-size: 1rem;
-	  margin-top: 1rem;
-	  line-height: 1.7;
+		font-size: 1rem;
+		margin-top: 1rem;
+		line-height: 1.7;
+		margin-left:-20px;
 	}
 
 }
