@@ -48,7 +48,7 @@ table {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Cinzel', "Lato", sans-serif;
 	background-color: #1683BD;
 }
 
@@ -101,8 +101,9 @@ body {
 
 .main .wrapper h1 {
 	margin-bottom: 10px;
-  font-size:3rem;
+  font-size:2rem;
   padding:1rem;
+  overflow:hidden;
 }
 
 /* Gridding system */
@@ -204,6 +205,13 @@ body {
 	line-height: 60px;
 }
 
+.footer-wrapper {
+	text-align:center;
+	margin-left: 160px;
+	margin-top: 20px;
+	padding: 0;
+}
+
 /* Responsive Grid */
 @media screen and (max-width: 1050px) {
   .grid-3 {
@@ -250,6 +258,13 @@ body {
 		line-height: 1.7;
 		margin-left: 150px;
 		margin-top: -5px;
+	}
+
+	.footer-wrapper {
+		text-align:center;
+		margin-left: 0px;
+		margin-top: 20px;
+		padding: 0;
 	}
 
 }
