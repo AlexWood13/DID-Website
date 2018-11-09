@@ -6,6 +6,7 @@
       <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
       <body>
 
@@ -16,7 +17,7 @@
       <a href="#contact">Contact</a>
     </div>
 
-    <div class="main">
+    <div class="main-wrapper">
       <div class="wrapper">
         <h1>Welcome To DepffThrone</h1>
       </div>
@@ -24,13 +25,13 @@
     <!-- Blurred image -->
     <div class="wrapper">
   <!--  "https://warriors.fandom.com/ru/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:697d27e61a951bcce39eb4ced2ec9f3a.jpg" alt="image of the Lich King from Warcraft 3 The Frozen Throne" title="Link to Source"-->
-     <section class="showcase" alt="Image of the Lich King from Warcraft 3 The Frozen Throne">
+    <section class="showcase" alt="Image of the Lich King from Warcraft 3 The Frozen Throne">
       <div class="content">
         <img src="assets/pyke.jpg" class="logo" alt="DeppfThrone Logo">
           <div class="title">
             <h2> Welcome To DepffThrone </h2>
           </div>
-        </section>
+    </section>
       </div>
 
   <!-- Services -->
@@ -56,14 +57,41 @@
         </div>
       </div>
     </section>
-    <!-- End of main -->
-    </div>
-
-  <div class="footer-wrapper">
-    <footer id="footer">
-      <p> copyright &copy; 2018 Alex Wood </p>
-    </footer>
   </div>
-  
+
+  <!-- End of main -->
+  </div>
+
+<div class="main-wrapper">
+  <div class="wrapper">
+    <!-- Word & Input -->
+      <p>Type The Given Word Within <span id="seconds"> </span> Seconds:</p>
+      <h2 id="current-word">hello</h2>
+      <input type="text" placeholder="Start typing..." id="word-input">
+      <h4 id="message"></h4>
+
+      <!-- Time & Score Columns -->
+      <h3>Time Left:
+        <span id="time">0</span>
+      </h3>
+      <h3>Score:
+        <span id="score">0</span>
+      </h3>
+
+      <!-- Instructions -->
+      <h5>Instructions</h5>
+      <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+      will reset</p>
+  </div>
+</div>
+
+<div class="footer-wrapper">
+  <footer id="footer">
+    <p> copyright &copy; 2018 Alex Wood </p>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+
       </body>
     </html>

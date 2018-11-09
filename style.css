@@ -85,22 +85,20 @@ body {
   margin:0 auto;
   background-color:#f5f5f5;
   border-radius:5px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 2rem 2rem;
 	box-shadow:7px 7px 7px #333;
 }
 
-.main {
+.main-wrapper {
 	text-align:center;
   margin-left: 160px;
-	margin-top: 10px;
   padding: 0;
   background-color:#1683BD;
 }
 
-.main .wrapper h1 {
-	margin-bottom: 10px;
+.main-wrapper .wrapper h1 {
   font-size:2rem;
   padding:1rem;
   overflow:hidden;
@@ -293,7 +291,7 @@ body {
 		border-top: none;
   }
 
-  .main {
+  .main-wrapper {
     margin-top:50px;
     margin-left: 0;
     font-size:;
