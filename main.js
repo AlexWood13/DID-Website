@@ -10,7 +10,7 @@ const levels = {
 };
 
 // To change level
-const currentLevel = levels.medium;
+const currentLevel = levels.easy;
 
 let time = currentLevel;
 let score = 0;
@@ -87,7 +87,7 @@ function startMatch() {
 // Match currentWord to wordInput
 function matchWords() {
   if (wordInput.value === currentWord.innerHTML) {
-    message.innerHTML = 'Correct!!!';
+    message.innerHTML = 'Correct!';
     return true;
   } else {
     message.innerHTML = '';
@@ -120,7 +120,7 @@ function countdown() {
 // Check game status
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = 'Game Over!!!';
+    message.innerHTML = 'Game Over!';
     score = -1;
   }
 }

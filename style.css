@@ -52,6 +52,10 @@ body {
 	background-color: #1683BD;
 }
 
+.clr{
+  clear:both;
+}
+
 .header-nav {
   height: 100%;
   width: 160px;
@@ -102,6 +106,8 @@ body {
   font-size:2rem;
   padding:1rem;
   overflow:hidden;
+	color: #1683BD;
+	font-weight:800;
 }
 
 /* Gridding system */
@@ -129,11 +135,14 @@ body {
 .grid-3 h3 {
   font-size:2rem;
   font-weight:800;
+	text-transform: uppercase;
+	color: #1683BD;
 }
 
 .grid-3 p {
-  font-size:1.3rem;
+  font-size:1rem;
   text-indent: 5px;
+	text-transform: capitalize;
 }
 
 .showcase::after {
@@ -190,6 +199,86 @@ body {
   line-height: 1.7;
 	margin-left:100px;
 	color:white;
+}
+
+/* Gridding system */
+.typeracer {
+  padding:10px 10px;
+  font-size:1rem;
+  display:grid;
+  grid-gap:20px;
+  line-height: 1.7;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+/*content container */
+.grid-container {
+  max-width:80%;
+  margin:auto;
+  overflow:hidden;
+  padding:4rem 2rem;
+  background-color:#fff;
+  border-radius:5px;
+	margin-bottom: 10px;
+	box-shadow: 7px 7px 7px #333;
+}
+
+.input {
+	height:100%;
+  background-color:#333;
+  color:#fff;
+  padding:10px;
+  box-sizing: border-box;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+.input p{
+	font-size:20px;
+	padding:10px;
+}
+
+.input input {
+	padding:10px;
+	margin:10px;
+	font-size:20px;
+}
+
+.input h3 {
+	padding:10px;
+	line-height: 5px;
+}
+
+.input h4 {
+	padding:10px;
+	line-height: 10px;
+}
+
+#current-word {
+	font-size:30px;
+	color: #1683BD;
+	padding:10px;
+}
+
+.instructions {
+	padding:15px;
+	box-sizing: border-box;
+}
+
+.instructions h5{
+	text-align: center;
+	font-size:20px;
+	text-decoration: underline;
+	color: #1683BD;
+	padding-bottom: 10px;
+	font-weight:800;
+}
+
+.instructions p{
+	text-align: center;
+	line-height:30px;
+	font-size:20px;
+	padding: 10px;
 }
 
 .footer-wrapper {
