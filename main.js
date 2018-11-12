@@ -49,7 +49,40 @@ const words = [
   'magic',
   'master',
   'space',
-  'definition'
+  'definition',
+  'orc',
+  'headhunter',
+  'blademaster',
+  'deathknight',
+  'warcraft',
+  'throne',
+  'blood',
+  'farsight',
+  'elf',
+  'gnome',
+  'goblin',
+  'mech',
+  'frozen',
+  'spider',
+  'wraith',
+  'banshee',
+  'infinity',
+  'beyond',
+  'map',
+  'keyboard',
+  'mouse',
+  'screen',
+  'fire',
+  'ice',
+  'kraken',
+  'turtle',
+  'monster',
+  'gnoll',
+  'dreadlord',
+  'demon',
+  'assassin',
+  'warlock',
+  'hunter'
 ];
 
 // Initialize Game
@@ -105,7 +138,7 @@ function showWord(words) {
 
 // Countdown timer
 function countdown() {
-  // Make sure time is not run out
+  // Make sure time has not ran out
   if (time > 0) {
     // Decrement
     time--;
