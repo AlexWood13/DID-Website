@@ -11,16 +11,18 @@
     </head>
       <body>
 
+    <!-- Navbar -->
     <div class="header-nav">
       <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
+      <a href="#download">Download</a>
+      <a href="#game">Game</a>
       <a href="#contact">Contact</a>
     </div>
 
+    <!-- Header + start of main-wrapper -->
     <div class="main-wrapper">
       <div class="wrapper">
-      <h1> Welcome to DepffThrone </h1>  
+      <h1 id="about"> Welcome to DepffThrone </h1>
       </div>
 
     <!-- Blurred image -->
@@ -35,7 +37,7 @@
     </section>
       </div>
 
-  <!-- Services -->
+  <!-- Services grid -->
     <section class="services">
       <div class="grid-container grid-3">
         <div>
@@ -60,16 +62,30 @@
     </section>
   </div>
 
-  <!-- End of main -->
+  <!-- End of main-wrapper -->
   </div>
 
-<div class="main-wrapper">
+<!-- new main to fix gridding issue -->
+<div class="main-wrapper-2">
+  <div class="wrapper">
+    <!-- Keyboard image with download -->
+    <div class="keyboard-text">
+      <h2 id="download"> Hotkeys! </h2>
+      <p> These are the hotkeys that you will most likely be using when playing Warcraft 3, The Frozen Thone. Use the typeracer game below to test you typing speed, so you can be as fast as possible when you use the hotkeys</p>
+      <a href="assets/keyboard.jpg" download> <button type="button" title="Download the image">Download</button> </a>  
+    </div>
+    <div class="keyboard-image">
+      <img src="assets/keyboard.jpg" alt="Image of a keyboard">
+    </div>
+  </div>
+
+  <!-- Type Racer Game -->
   <div class="wrapper">
     <div class="typeracer">
       <!-- Instructions -->
       <div class="instructions">
         <h5>Instructions</h5>
-        <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+        <p id="game">Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
         will reset</p>
       </div>
 
@@ -90,9 +106,11 @@
       </div>
     </div>
   </div>
-</div>
 
 <div class="clr">
+</div>
+
+<!-- End of main-wrapper -->
 </div>
 
 <div class="footer-wrapper">
