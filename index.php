@@ -72,7 +72,7 @@
     <div class="keyboard-text">
       <h2 id="download"> Hotkeys! </h2>
       <p> These are the hotkeys that you will most likely be using when playing Warcraft 3, The Frozen Thone. Use the typeracer game below to test you typing speed, so you can be as fast as possible when you use the hotkeys</p>
-      <a href="assets/keyboard.jpg" download> <button type="button" title="Download the image">Download</button> </a>  
+      <a href="assets/keyboard.jpg" download> <button type="button" title="Download the image">Download</button> </a>
     </div>
     <div class="keyboard-image">
       <img src="assets/keyboard.jpg" alt="Image of a keyboard">
@@ -108,6 +108,18 @@
   </div>
 
 <div class="clr">
+</div>
+
+
+<div class="wrapper">
+  <p>SEND E-MAIL</p>
+  <form class="contact-form" action="contactform.php" method="post">
+    <input type="text" name="name" placeholder="Full name">
+    <input type="text" name="mail" placeholder="Your E-mail">
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" rows="8" cols="80"     placeholder="Message"></textarea>
+    <button type="submit" name="submit"> Send Mail </button>
+  </form>
 </div>
 
 <!-- End of main-wrapper -->
