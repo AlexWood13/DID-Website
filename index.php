@@ -112,7 +112,8 @@
 
 
 <div class="wrapper">
-  <p>SEND E-MAIL</p>
+  <h2 class="contact-h2">Contact Us </h2>
+  <p class="contact-p">Fill out the Contact form below to send any queries or problems you have with the website! </p>
   <form class="contact-form" action="contactform.php" method="post">
     <input type="text" name="name" placeholder="Full name">
     <input type="text" name="mail" placeholder="Your E-mail">
