@@ -110,7 +110,6 @@
 <div class="clr">
 </div>
 
-
 <div class="wrapper">
   <h2 class="contact-h2">Contact Us </h2>
   <p class="contact-p">Fill out the Contact form below to send any queries or problems you have with the website! </p>
