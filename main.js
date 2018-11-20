@@ -17,7 +17,7 @@ let score = 0;
 let isPlaying;
 
 // DOM Elements
-const wordInput = document.querySelector('#word-input');
+var wordInput = document.querySelector('#word-input');
 const currentWord = document.querySelector('#current-word');
 const scoreDisplay = document.querySelector('#score');
 const timeDisplay = document.querySelector('#time');
@@ -25,7 +25,7 @@ const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 
 const words = [
-  'hat',
+  'hat', 
   'river',
   'lucky',
   'statue',
@@ -157,3 +157,12 @@ function checkStatus() {
     score = -1;
   }
 }
+
+// download script 
+$( document ).ready (function() {
+var canvas = document.getElementById('c'),
+cxt = canvas.getContext('2d'),
+downloadLink = document.getElementById('download-canvas');
+
+downloadLink.href = canvas.toDataURL();
+downloadLink.download = "keyboard.jpg"; })();

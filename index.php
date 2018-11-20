@@ -8,6 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://www.google.com/recaptcha/api.js'></script>    
     </head>
       <body>
 
@@ -25,8 +26,8 @@
       <h1 id="about"> Welcome to DepffThrone </h1>
       </div>
 
-    <!-- Blurred image -->
-    <div class="wrapper">
+<!-- Blurred image -->
+<div class="wrapper">
   <!--  "https://warriors.fandom.com/ru/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:697d27e61a951bcce39eb4ced2ec9f3a.jpg" alt="image of the Lich King from Warcraft 3 The Frozen Throne" title="Link to Source"-->
     <section class="showcase" alt="Image of the Lich King from Warcraft 3 The Frozen Throne">
       <div class="content">
@@ -34,8 +35,9 @@
           <div class="title">
             <h2> Welcome To DepffThrone </h2>
           </div>
-    </section>
       </div>
+    </section>
+</div>
 
   <!-- Services grid -->
     <section class="services">
@@ -62,9 +64,6 @@
     </section>
   </div>
 
-  <!-- End of main-wrapper -->
-  </div>
-
 <!-- new main to fix gridding issue -->
 <div class="main-wrapper-2">
   <div class="wrapper">
@@ -72,12 +71,15 @@
     <div class="keyboard-text">
       <h2 id="download"> Hotkeys! </h2>
       <p> These are the hotkeys that you will most likely be using when playing Warcraft 3, The Frozen Thone. Use the typeracer game below to test you typing speed, so you can be as fast as possible when you use the hotkeys</p>
-      <a href="assets/keyboard.jpg" download> <button type="button" title="Download the image">Download</button> </a>
+        
     </div>
     <div class="keyboard-image">
       <img src="assets/keyboard.jpg" alt="Image of a keyboard">
     </div>
   </div>
+    
+    
+
 
   <!-- Type Racer Game -->
   <div class="wrapper">
@@ -85,8 +87,7 @@
       <!-- Instructions -->
       <div class="instructions">
         <h5>Instructions</h5>
-        <p id="game">Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
-        will reset</p>
+        <p id="game">Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset. Please ensure that you type in lowercase letters when playing the game.</p>
       </div>
 
       <!-- Word & Input -->
@@ -112,13 +113,14 @@
 
 <div class="wrapper">
   <h2 class="contact-h2">Contact Us </h2>
-  <p class="contact-p">Fill out the Contact form below to send any queries or problems you have with the website! </p>
   <form class="contact-form" action="contactform.php" method="post">
     <input type="text" name="name" placeholder="Full name">
     <input type="text" name="mail" placeholder="Your E-mail">
     <input type="text" name="subject" placeholder="Subject">
     <textarea name="message" rows="8" cols="80"     placeholder="Message"></textarea>
     <button type="submit" name="submit"> Send Mail </button>
+    <div class="g-recaptcha" data-sitekey="6Lf-YHUUAAAAADJOgQFyUZCrXGqKKxuVGrwg3uMT" data-theme="dark" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+      <div class="clr"> </div>
   </form>
 </div>
 
@@ -151,5 +153,5 @@
 
 <script src="main.js"></script>
 
-      </body>
-    </html>
+</body>
+</html>

@@ -237,7 +237,7 @@ body {
 }
 
 /* Download button */
-.keyboard-text button{
+#download-canvas button{
 	font-size:1rem;
 	color:#1683BD;
 	background-color:#333;
@@ -260,19 +260,19 @@ body {
 
 /* Type Racer Game */
 .typeracer {
-	height:300px;
+	height:400px;
 }
 
 .input {
-	float:left;
-	width:70%;
-	height:100%;
+  float:left;
+  width:70%;
+  height:100%;
   background-color:#333;
   color:#fff;
   padding:10px;
   box-sizing: border-box;
-	border-radius: 5px;
-	overflow:hidden;
+  border-radius: 5px;
+  overflow:hidden;
 }
 
 .input p{
@@ -321,7 +321,7 @@ body {
 .instructions p{
 	text-align: center;
 	line-height:30px;
-	font-size:20px;
+	font-size:1rem;
 	padding: 10px;
 }
 
@@ -331,17 +331,11 @@ body {
 	font-size:30px;
 	color: #1683BD;
 	padding:10px;
-}
-
-.contact-p {
-	text-align: center;
-	line-height:30px;
-	font-size:20px;
-	padding: 10px;
+    margin-bottom: 20px;
 }
 
 form {
-	height: 250px;
+	height: 600px;
 	width: 100%;
 	padding: 10px;
 	display:flex;
@@ -561,10 +555,10 @@ span li {
   }
 
 	.main-wrapper-2 {
-		margin-top:-40px;
-		margin-left: 0;
-		font-size:;
-		padding: 10px 10px 0 10px;
+    margin-top:-40px;
+    margin-left: 0;
+    font-size:;
+    padding: 10px 10px 0 10px;
 	}
 
   .main p {
@@ -573,23 +567,23 @@ span li {
   }
 
 	.content .logo {
-		height:80px;
-		width:80px;
-		margin-left:0px;
+    height:80px;
+    width:80px;
+    margin-left:0px;
 	}
 
 	.content .title {
-		font-size: 1rem;
-		margin-top: 1rem;
-		line-height: 1.7;
-		margin-left:-20px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.7;
+    margin-left:-20px;
 	}
 
 	footer {
-		width: calc(100% -80px);
-		padding:40px 40px;
-		background-color: #fff;
-		height:150px;
+    width: calc(100% -80px);
+    padding:40px 40px;
+    background-color: #fff;
+    height:150px;
 	}
 
 	footer ul {
@@ -626,7 +620,7 @@ span li {
 	}
 
 	.typeracer {
-		height:650px;
+		height:800px;
 	}
 
 	.input {
