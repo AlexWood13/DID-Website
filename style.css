@@ -237,7 +237,7 @@ body {
 }
 
 /* Download button */
-#download-canvas button{
+.keyboard-image a button{
 	font-size:1rem;
 	color:#1683BD;
 	background-color:#333;
@@ -250,11 +250,11 @@ body {
 
 /* Keyboard image */
 .keyboard-image {
-	height:250px;
+	height:400px;
 }
 
 .keyboard-image img{
-	height:100%;
+	height:90%;
 	width:100%;
 }
 
@@ -367,12 +367,11 @@ form {
 	font-size:1rem;
 	color:#1683BD;
 	background-color:#333;
-	padding:10px 10px 30px 10px;
+	padding:10px;
 	border-radius:5px;
 	border:solid 2px #1683BD;
 	margin-bottom: 10px;
 	cursor:pointer;
-	line-height: 20px;
 }
 
 /* Footer */
@@ -528,7 +527,7 @@ span li {
   .header-nav {
     height: 50px;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.7);
     padding-top: 0px;
     display:flex;
     flex-flow:row nowrap;
@@ -541,7 +540,7 @@ span li {
     line-height: 50px;
     padding: 0;
     font-size: 1rem;
-    color: #111;
+    color: #FFF;
     display:flex;
 		border-bottom: none;
 		border-top: none;

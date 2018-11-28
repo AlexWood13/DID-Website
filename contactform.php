@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
 
   //checking for an invalid e-mail.
   else if (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)) {
-      header("Location: index.php?error=invalidmail&uid=".$name);
+      header("Location: index.php?error=invalidmail&name=".$name."&mail=".$mailFrom);
       exit();
   }
 
