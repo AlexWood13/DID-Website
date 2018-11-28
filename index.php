@@ -23,20 +23,26 @@
 <!-- Header + start of main-wrapper -->
 <div class="main-wrapper">
   <div class="wrapper">
-  <h1 id="about"> Welcome to DepffThrone </h1>
+  <h1> Welcome to DepffThrone </h1>
   <?php
      if (isset($_GET['error'])) {
        //empty filed error message
        if ($_GET['error'] == "emptyfields") {
-         echo '<p class="error"> Fill in all fields! </p>';
+         echo '<script language="javascript">';
+         echo 'alert("Fill in all fields! Press Okay to continue and press the Contact link to return to the form.")';
+         echo '</script>';
        }
        //invalid email error message
        else if ($_GET['error'] == "invalidmail"){
-         echo '<p class="error">Invalid e-mail!</p>';
+         echo '<script language="javascript">';
+         echo 'alert("Invalid email! Press Okay to continue and press the Contact link to return to the form.")';
+         echo '</script>';
        }
        //reCAPTCHA error message
        else if ($_GET['error'] == "reCAPTCHAfail"){
-         echo '<p class="error">You have not validated the reCAPTCHA. Please try again!</p>';
+         echo '<script language="javascript">';
+         echo 'alert("You have not validated the reCAPTCHA! Press Okay to continue and press the Contact link to return to the form.")';
+         echo '</script>';
        }
      }
      // create a success message if message was sent
@@ -66,7 +72,7 @@
 <!-- Services grid -->
   <section class="services">
     <div class="grid-container grid-3">
-      <div>
+      <div id="about">
         <i class="fas fa-desktop fa-3x"></i>
         <h3>About</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -133,6 +139,12 @@
 <div class="clr">
 </div>
 
+<div class="wrapper">
+    <video width="100%" height="100%" download controls>
+      <source src="720.mp4" type="video/mp4">
+    </video>
+</div>
+
 <!-- contact form -->
 <div class="wrapper">
   <h2 class="contact-h2">Contact Us </h2>
@@ -161,9 +173,9 @@
 
     <input type="text" name="subject" placeholder="Subject">
     <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
-    <button type="submit" name="submit"> Send Mail </button>
     <div class="g-recaptcha" data-sitekey="6Lf-YHUUAAAAADJOgQFyUZCrXGqKKxuVGrwg3uMT" data-theme="dark" style="transform:scale(1);-webkit-transform:scale(1);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
       <div class="clr"> </div>
+    <button type="submit" name="submit"> Send Mail </button>
   </form>
 </div>
 
