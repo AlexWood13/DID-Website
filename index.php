@@ -42,7 +42,9 @@
      // create a success message if message was sent
        else if (isset($_GET["mailsent"])) {
          if ($_GET["mailsent"] == "successful") {
-           echo '<p class="mailsentsuccess">Email sent successfully!</p>';
+           echo '<script language="javascript">';
+           echo 'alert("message successfully sent")';
+           echo '</script>';
        }
      }
    ?>
@@ -158,7 +160,7 @@
     ?>
 
     <input type="text" name="subject" placeholder="Subject">
-    <textarea name="message" rows="8" cols="80"     placeholder="Message"></textarea>
+    <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
     <button type="submit" name="submit"> Send Mail </button>
     <div class="g-recaptcha" data-sitekey="6Lf-YHUUAAAAADJOgQFyUZCrXGqKKxuVGrwg3uMT" data-theme="dark" style="transform:scale(1);-webkit-transform:scale(1);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
       <div class="clr"> </div>
