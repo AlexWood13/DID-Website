@@ -61,7 +61,6 @@ if (isset($_POST['submit'])) {
 
     //reloading the page once completed and displaying email success message
     header("Location: index.php?mailsent=successful");
-    alert("Hello Youtube this is a tutorial");
     exit;
   }
 
